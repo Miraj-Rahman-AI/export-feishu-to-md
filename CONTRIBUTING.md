@@ -1,59 +1,89 @@
 # Contributing
 
-感谢你对本项目的关注！欢迎提交 Issue 和 Pull Request。
+Thank you for your interest in this project! We welcome your Issue and Pull Request submissions.
 
-## 开发环境
+## Development Environment
 
 - [Bun](https://bun.sh) >= 1.0
+
 - TypeScript
 
 ```bash
 git clone https://github.com/WakeUp-Jin/export-feishu-to-md.git
+
 cd export-feishu-to-md
+
 bun install
+
 ```
 
-## 开发流程
+## Development Workflow
 
-1. Fork 本仓库
-2. 创建你的分支：`git checkout -b feat/your-feature`
-3. 开发并测试：`bun run dev -- export -d <token>`
-4. 提交：`git commit -m "feat: add your feature"`
-5. 推送：`git push origin feat/your-feature`
-6. 创建 Pull Request
+1. Fork this repository
 
-## Commit 规范
+2. Create your branch: `git checkout -b feat/your-feature`
 
-使用 [Conventional Commits](https://www.conventionalcommits.org/) 格式：
+3. Develop and test: `bun run dev -- export -d <token>`
 
-- `feat:` 新功能
-- `fix:` 修复
-- `docs:` 文档
-- `refactor:` 重构
-- `chore:` 构建/工具
+4. Commit: `git commit -m "feat: add your feature"`
 
-## 目录结构
+5. Push: `git push origin feat/your-feature`
+
+6. Create a Pull Request
+
+## Commit Specifications
+
+Use [Conventional Commits](https://www.conventionalcommits.org/) format:
+
+- `feat:` New feature
+
+- `fix:` Fixes
+
+- `docs:` Documentation
+
+- `refactor:` Refactoring
+
+- `chore:` Build/Tools
+
+## Directory Structure
 
 ```
 src/
-  index.ts              # CLI 入口
-  config.ts             # 配置解析
-  api/                  # 飞书 API 调用
-    auth.ts             # 认证
-    document.ts         # 文档/Wiki API
-    media.ts            # 媒体下载
-    counter.ts          # API 调用计数
-  converter/            # Markdown 转换
-    markdown.ts         # 核心渲染器
-    types.ts            # 类型定义
-    buffer.ts           # 字符串拼接工具
-    emoji.ts            # Emoji 映射
-  utils/
-    logger.ts           # 日志
-    file.ts             # 文件操作
+
+index.ts # CLI entry point
+
+config.ts # Configuration parsing
+
+api/ # Lark API calls
+
+auth.ts # Authentication
+
+document.ts # Documentation/Wiki API
+
+media.ts # Media download
+
+counter.ts # API call count
+
+converter/ # Markdown conversion
+
+markdown.ts # Core renderer
+
+types.ts # Type definitions
+
+buffer.ts # String concatenation tool
+
+emoji.ts # Emoji mapping
+
+utils/
+
+logger.ts # Logger
+
+file.ts # File operations
+
 ```
 
-## 提交 Issue
+## Submit an Issue
 
-- Bug 请附上错误日志（`--debug` 模式输出）
-- Feature 请描述使用场景
+- Bugs: Please attach error logs (output in `--debug` mode)
+
+- Features: Please describe the use case

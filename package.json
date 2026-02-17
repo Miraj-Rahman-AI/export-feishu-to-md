@@ -1,7 +1,7 @@
 {
   "name": "fm-ka",
   "version": "0.1.2",
-  "description": "飞书文档转 Markdown 的 CLI 工具",
+  "description": "A CLI tool for converting Lark documents to Markdown.",
   "type": "module",
   "bin": {
     "fm": "./bin/fm.mjs"
